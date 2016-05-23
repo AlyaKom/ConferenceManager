@@ -1,0 +1,12 @@
+Вопросы по проекту, которые не получилось исправить:
+1. Картинка на главной странице не запускается, пыталась сделать по ссылке (
+@Override
+public void addResourceHandlers(ResourceHandlerRegistry registry) {registry.addResourceHandler("/resources/*").addResourceLocations("/resources/");
+    }),
+ что Вы присылали, но не вышло.
+
+2. В классе Lecture два поля объявлены @OneToOne и @ManyToOne вместо двух @ManyToOne. При двух @ManyToOne проект не деплоится.
+
+3. Не работает удаление в Lectures, подозреваю, что из-за внешних ключей, но не могу исправить.
+
+4. В классе MyController не работают два последних метода.
